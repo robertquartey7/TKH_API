@@ -1,7 +1,9 @@
 import axios from "axios";
 
-const RECIPE_API_KEY = "10bead5092f4312f4c8007cb8aaacec2";
-const RECIPE_API_ID = "47e1a744";
+
+
+const RECIPE_API_KEY = import.meta.env.VITE_RECIPE_API_KEY
+const RECIPE_API_ID = import.meta.env.VITE_RECIPE_API_ID
 
 const main = document.getElementById("recipe-box");
 const search = document.getElementById("search");
